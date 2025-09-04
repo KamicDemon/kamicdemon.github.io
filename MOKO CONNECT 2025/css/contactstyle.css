@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+html{
+    font-size: 100%;
+}
+.contact-form{
+    display: flex;
+    max-width: 920px;
+    margin-bottom: 50px;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+/*左側*/
+.contact-form .contact-img{
+    width: 35%;
+    padding-left: 70px;
+}
+.contact-title{
+    background: linear-gradient(45deg, #757575 0%, #9e9e9e 25%, #e8e8e8 50%, #9e9e9e 75%, #757575 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3.5rem;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.memo{
+    margin-top: 100px;
+}
+.required-information{
+    background: linear-gradient(45deg, #757575 0%, #9e9e9e 25%, #e8e8e8 50%, #9e9e9e 75%, #757575 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-left: 0;
+    font-size: 0.95rem;
+}
+/*右側*/
+.contact-text{
+    width: 45%;
+}
+.contact-text label{
+    background: linear-gradient(45deg, #757575 0%, #9e9e9e 25%, #e8e8e8 50%, #9e9e9e 75%, #757575 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 0.9rem;
+}
+.contact-text span{
+    color: #9e9e9e;
+    font-size: 0.7em;
+}
+.contact-text dt{
+    padding-left: 40px;
+}
+input[type="text"],
+input[type="email"]{
+    height: 20px;
+}
+input[name="sei"],
+input[name="f-sei"],
+input[name="first-name"]{
+    margin-right: 10px;
+}
+input[name="company"],
+input[type="email"]{
+    width: 345px;
+}
+.contact-text .submit-btn{
+    border-radius: solid 1px;
+    padding-left: 40px;
+}
+.privacy-policy{
+    font-size: 0.8rem;
+    margin-top: 2px;
+}

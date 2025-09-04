@@ -1,0 +1,645 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+html{
+    font-size: 100%;
+}
+body{
+    background: #080808;
+    font-family: "Helvetica", Arial, sans-serif;
+}
+a{
+    background: linear-gradient(45deg, #757575 0%, #9e9e9e 25%, #e8e8e8 50%, #9e9e9e 75%, #757575 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    vertical-align: bottom;
+}
+li{
+    list-style: none;
+}
+p{
+    background: linear-gradient(45deg, #757575 0%, #9e9e9e 25%, #e8e8e8 50%, #9e9e9e 75%, #757575 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.container{
+    margin-left: 300px;
+}
+.wrapper{
+    max-width: 900px;
+    /*padding:  ;*/
+    margin: 0 auto;
+}
+.site-title{
+    width: 180px;
+    line-height: 1px;
+    margin-bottom: 30px;
+}
+.site-title a{
+    display: block;
+}
+
+
+/*ナビゲーションメニュー*/
+#header{
+    width: 300px;
+    height: 100%;
+    padding: 30px 0px 20px 40px;
+    position: fixed;
+    top: 0;
+    overflow-y: auto;
+}
+
+.navi-item a{
+    background: linear-gradient(45deg, #757575 0%, #9e9e9e 25%, #e8e8e8 50%, #9e9e9e 75%, #757575 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.navi-item a:hover{
+    background: linear-gradient(45deg, #b67b03 0%, #daaf08 25%, #fee910 50%, #daaf08 75%, #b67b03 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#header li{
+    font-size: 1rem;
+    padding: 8px 0;
+}
+.language{
+    position: absolute;
+    bottom: 250px;
+
+}
+
+/*ビデオ-ビジュアル*/
+#video .bg-video{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -10;
+}
+#training,
+#service,
+#product{
+    padding-bottom: 80px;
+}
+.section-title{
+    background: linear-gradient(45deg, #757575 0%, #9e9e9e 25%, #e8e8e8 50%, #9e9e9e 75%, #757575 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 20%;
+    left: 42%;
+}
+.fixed-img{
+    height: 150px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 80px;
+}
+.sub-title{
+    background: linear-gradient(45deg, #757575 0%, #9e9e9e 25%, #e8e8e8 50%, #9e9e9e 75%, #757575 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.point-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.75rem;
+    margin-bottom: 60px;
+    text-align: center;
+    background: linear-gradient(45deg, #757575 0%, #9e9e9e 25%, #e8e8e8 50%, #9e9e9e 75%, #757575 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.point-title::before,
+.point-title::after{
+    border-top: 1px solid #9e9e9e;
+    content: "";
+    width: 28%;
+}
+.btn{
+    border: solid 1px #9e9e9e;
+    padding: 8px;
+}
+
+.btn:hover{
+    border: solid 1px #daaf08;
+    background: linear-gradient(45deg, #b67b03 0%, #daaf08 25%, #fee910 50%, #daaf08 75%, #b67b03 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*タイトルイメージ*/
+#training .training-img{
+    width: 100%;
+    background-image: url(../img/training.jpg);
+    position: relative;
+}
+#service .service-img{
+    width: 100%;
+    background-image: url(../img/service.jpg);
+    position: relative;
+}
+#product .product-img{
+    width: 100%;
+    background-image: url(../img/product.jpg);
+    position: relative;
+}
+
+/*アバウト*/
+#about{
+    padding-top: 30px;
+
+}
+#about .about-frame{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 0;
+}
+#about .item{
+    width: 49%;
+    text-align: center;
+}
+#about img{
+    width: 55%;
+    padding: 0;
+}
+#about p{
+    text-align: left;
+    margin-top: 0;
+}
+
+/*ニュース*/
+#news{
+    padding-bottom: 80px;
+}
+#news .news-title{
+    background: linear-gradient(45deg, #757575 0%, #9e9e9e 25%, #e8e8e8 50%, #9e9e9e 75%, #757575 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+#news .news-list{
+    margin: 0px 50px 0px 10px;
+}
+#news .news-list li{
+    border-top: solid 1px #9e9e9e;
+    padding: 5px 0;
+}
+#news .news-list li:last-child{
+    border-bottom: solid 1px #9e9e9e;
+}
+#news .date-area p{
+    font-size: 0.85rem;
+}
+
+/*トレーニング*/
+#training .list{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+}
+#training .list li{
+    width: 43%;
+    font-size: 0.875rem;
+    text-align: center;
+    border: 1px solid #9e9e9e;
+    padding: 50px 20px;
+}
+#training .list li:first-child{
+    margin-left: 0;
+}
+#training .btn-frame{
+    margin-top: 30px;
+}
+.google-icon{
+    width: 35px;
+}
+
+/*サービス*/
+
+#service .list{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+}
+#service .list li{
+    width: 30%;
+    font-size: 0.875rem;
+    text-align: center;
+}
+#service .list li a{
+    width: 100%;
+    border: solid 1px #e8e8e8;
+    border-radius: 50%;
+    display: block;
+    padding: calc(50% - 15px) 0;
+    margin-bottom: 15px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    font-weight: 350;
+}
+
+#service .list li a::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #e8e8e8;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    opacity: 0.3;
+    transition: 0.5s;
+}
+#service .list li a:hover::before{
+    top: 0;
+}
+
+
+/*プロダクト*/
+#product .product-frame{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 0;
+}
+
+#product .item{
+    width: 42%;
+    text-align: left;
+    padding: 5px 30px;
+}
+#product .item:last-child{
+    padding-left: 0px;
+}
+
+#product h1{
+    background: linear-gradient(45deg, #757575 0%, #9e9e9e 25%, #e8e8e8 50%, #9e9e9e 75%, #757575 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+
+#product .btn-frame{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+#product .alert{
+    text-align: center;
+    margin-top: 50px;
+}
+#product .alert p{
+    font-size: 0.95rem;
+}
+.slider-nav{
+    display: flex;
+    
+}
+.slider-nav li{
+    width: 22%;
+    padding: 1%;
+
+}
+
+/*アコーディオンメニュー*/
+#product .product-content {
+    text-align: left;
+    margin-left: 0;
+    padding: 5px 35px 5px 0px;
+}
+#ac-menu .label{
+    cursor: pointer;
+    font-size: 1.125rem;
+    font-weight: bold;
+    padding: 40px 20px;
+    position: relative;
+    transition: 0.5s;
+}
+#ac-menu .label p{
+    width: 40%;
+    margin: 0;
+    font-size: 1.2rem;
+}
+#ac-menu .label p:hover{
+    background: linear-gradient(45deg, #b67b03 0%, #daaf08 25%, #fee910 50%, #daaf08 75%, #b67b03 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#ac-menu .label::before,
+#ac-menu .label::after{
+    content: '';
+    width: 20px;
+    height: 1px;
+    background: #9e9e9e;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+}
+#ac-menu .label::after{
+    transform: translateY(-50%) rotate(90deg);
+    transition: 0.5s;
+}
+
+#ac-menu .label.open{
+    background-color: #360462;
+}
+#ac-menu .label.open::before{
+    opacity: 0;
+}
+#ac-menu .label.open::after{
+    transform: rotate(180deg);
+}
+
+#product .product-content .detail{
+    background: linear-gradient(45deg, #757575 0%, #9e9e9e 25%, #e8e8e8 50%, #9e9e9e 75%, #757575 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#ac-menu li{
+    border-top: solid 1px #9e9e9e;
+}
+#ac-menu li:last-child{
+    border-bottom: solid 1px #9e9e9e;
+}
+#ac-menu h3{
+    margin: 40px 0px 20px 0px;
+}
+
+#ac-menu .detail{
+    border-top: solid 1px #9e9e9e;
+    padding: 0 0 20px 0;
+    display: none;
+}
+#ac-menu .detail dl{
+    display: flex;
+    flex-wrap: wrap;
+}
+#ac-menu .detail dt{
+    width: 28%;
+    font-weight: bold;
+    font-size: 0.95rem;
+    margin-bottom: 30px;
+}
+#ac-menu .detail dd{
+    width: 65%;
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+}
+#ac-menu .detail p{
+    font-size: 0.95rem;
+}
+
+
+/*コンタクト*/
+#contact{
+    margin: 0px 0 140px 0;
+    text-align: center;
+}
+#contact .contact-title{
+    background: linear-gradient(45deg, #757575 0%, #9e9e9e 25%, #e8e8e8 50%, #9e9e9e 75%, #757575 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3.5rem;
+}
+
+
+
+
+
+
+/*フッター*/
+#footer{
+    display: flex;
+    justify-content: center;
+    border-top: solid 1px #9e9e9e;
+    font-size: 0.75rem;
+    padding: 30px 30px;
+    text-align: left;
+}
+
+#footer .copyright{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(45deg, #757575 0%, #9e9e9e 25%, #e8e8e8 50%, #9e9e9e 75%, #757575 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#footer .copyright li{
+    margin-right: 20px;
+}
+
+
+
+
+
+@media screen and (max-width: 960px){
+    .container{
+        margin-left: 0;
+    }
+    .wrapper{
+        padding: 60px 20px;
+    }
+
+    .site-title{
+        width: 100px;
+        margin-top: 8px;
+        margin-bottom: 0;
+        position: relative;
+        left: 18px;
+        top: 0px;
+    }
+    .point-title{
+        font-size: 1.2rem;
+    }
+    p{
+        font-size: 15px;
+    }
+    .fixed-img{
+        margin-bottom: 15px;
+    }
+    #training,
+    #service,
+    #product{
+        padding-bottom: 10px;
+    }
+    #header{
+        width: 100%;
+        height: 72px;
+        padding: 0;
+        z-index: 30;
+    }
+    .language{
+        position: absolute;
+        bottom: 350px;
+    }
+    #navi-menu{
+        width: 200px;
+        background: #360462;
+        padding: 25px;
+        position: fixed;
+        top: 0;
+        left: -200px;
+        bottom: 0;
+        opacity: 0;
+        overflow-y: auto;
+        transition: 0.5s;
+        z-index: 20;
+    }
+    .open #navi-menu{
+        left: 0;
+        opacity: 1;
+    }
+
+
+    .hamburger{
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        position: fixed;
+        top: 22px;
+        right: 18px;
+        transition: 0.5s;
+        z-index: 20;
+    }
+    .hamburger span{
+        width: 30px;
+        height: 2px;
+        background-color: #9e9e9e;
+        border-radius: 4px;
+        display: block;
+        position: absolute;
+        left: 0;
+        transition: 0.5s;
+    }
+    .hamburger span:nth-child(1){
+        top: 4px;
+    }
+    .hamburger span:nth-child(2){
+        top: 14px;
+    }
+    .hamburger span:nth-child(3){
+        bottom: 4px;
+    }
+    .open .hamburger span{
+        background-color: #9e9e9e;
+    }
+    .open .hamburger span:nth-child(1){
+        transform: translateY(10px) rotate(-315deg);
+    }
+    .open .hamburger span:nth-child(2){
+        opacity: 0;
+    }
+    .open .hamburger span:nth-child(3){
+        transform: translateY(-10px) rotate(315deg);
+    }
+
+    #mask{
+        display: none;
+        transition: 0.5s;
+    }
+    .open #mask{
+        width: 100%;
+        height: 100%;
+        /*background-color: ;*/
+        cursor: pointer;
+        display: block;
+        opacity: 0.8;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+    }
+
+    #video .bg-video{
+        margin-top: 72px;
+        height: 550px;
+    }
+
+
+    #training .list{
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 38px;
+        margin-right: 38px;
+    }
+    #training .list li{
+        width: 80%;
+        justify-content: center;
+        margin-bottom: 50px;
+        padding: 50px;
+    }
+    #service .list a{
+        font-size: 13px;
+        padding: 2px;
+    }
+    #product .product-frame{
+        flex-direction: column-reverse;
+    }
+    #product .item{
+        width: 72%;
+        padding: 10px;
+    }
+    #product h1{
+        font-size: 1.3rem;
+    }
+
+    #product .alert{
+        margin-top: 10px;
+    }
+    #product .alert p{
+        font-size: 0.8rem;
+    }
+
+    #ac-menu .label p{
+        font-size: 1.1rem;
+    }
+    #ac-menu .detail h3{
+        font-size: 1rem;
+        margin: 30px 0 5px 0;
+    }
+    #ac-menu .detail p{
+        font-size: 0.9rem;
+    }
+    #ac-menu .detail dl{
+        flex-direction: column;
+    }
+    #ac-menu .detail dt{
+        width: 100%;
+        margin-bottom: 5px;
+        font-size: 0.9rem;
+    }
+    #ac-menu .detail dd{
+        width: 100%;
+        margin-left: 0;
+        font-size: 0.85rem;
+    }
+
+    #contact{
+        margin: 0px 0px 90px 0px;
+    }
+    #contact .contact-title{
+        font-size: 3rem;
+    }
+}

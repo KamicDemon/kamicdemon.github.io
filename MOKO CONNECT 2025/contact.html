@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>CONTACT PAGE │MOKO CONNECT</title>
+        <meta name="description" content="MOKO CONNECT">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/contactstyle.css">
+    </head>
+
+    <body>
+        <main>
+            <div class="contact-form">
+                <div class="contact-img">
+                    <h1 class="contact-title">CONTACT</h1>
+                    <p>
+                        必須項目をご入力の上、送信してください。<br>
+                    </p>
+                    <div class="memo">
+                        <p>※商品をお求めの方へ</p>
+                        <p>お問い合わせの際、以下の項目につきましてもご入力をお願いいたします。</p>
+                        <ul class="required-information">
+                            <li>- 電話番号</li>
+                            <li>- 配送先</li>
+                            <li>- RAMNベースシステムの購入希望数</li>
+                            <li>- ECU拡張パックの購入希望数</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="contact-text">
+                    <form action="mailto:contact@mokocon.com" method="post" enctype="multipart/form-data">
+                        <dl class="form-area">
+                            <dt>
+                                <label for="name">氏名</label><span>※</span>
+                            </dt>
+                            <dd>
+                                <input type="text" name="sei" required placeholder="姓">
+                                <input type="text" name="mei" required placeholder="名">
+                            </dd>
+                            <dt>
+                                <label for="furigana">ふりがな</label><span>※</span>
+                            </dt>
+                            <dd>
+                                <input type="text" name="f-sei" required placeholder="せい">
+                                <input type="text" name="f-mei" required placeholder="めい">
+                            </dd>
+                            <dt>
+                                <label for="company-name">所属機関/会社名</label>
+                            </dt>
+                            <dd>
+                                <input type="text" name="company">
+                            </dd>
+                            <dt>
+                                <label for="email-address">返信先メールアドレス</label><span>※</span>
+                            </dt>
+                            <dd>
+                                <input type="email" required placeholder="sample@test.com">
+                            </dd>
+                            <dt>
+                                <label for="phone-number">電話番号</label>
+                            </dt>
+                            <dd>
+                                <input type="tel" placeholder="000-0000">
+                            </dd>
+                            <dt>
+                                <label for="desitination">配送先（国）</label>
+                            </dt>
+                            <dd>
+                                <input type="text" placeholder="日本">
+                            </dd>
+                            <dt>
+                                <label for="ramn-quantity">RAMNベースボードの購入希望数</label>
+                            </dt>
+                            <dd>
+                                <input type="number" placeholder="1">
+                            </dd>
+                            <dt>
+                                <label for="extension-quantity">ECU拡張パックの購入希望数</label>
+                            </dt>
+                            <dd>
+                                <input type="number" placeholder="1">
+                            </dd>
+                            <dt>
+                                <label for="detail">お問い合わせ内容</label><span>※</span>
+                            </dt>
+                            <dd>
+                                <textarea name="inquiry" cols="70" rows="20"></textarea>
+                            </dd>
+
+                            <dt></dt>
+                            <dd>
+                                <p class="privacy-policy">
+                                    <a href="MOKOCon Privacy Policy.pdf" target="_blank">プライバシーポリシー</a>
+                                </p>
+                            </dd>
+                        </dl>
+
+                        <div class="submit-btn">
+                            <input type="submit" name="submit" value="同意して送信">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

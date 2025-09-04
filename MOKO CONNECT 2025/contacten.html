@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>CONTACT PAGE │MOKO CONNECT</title>
+        <meta name="description" content="MOKO CONNECT">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/contactstyle.css">
+    </head>
+
+    <body>
+        <main>
+            <div class="contact-form">
+                <div class="contact-img">
+                    <h1 class="contact-title">CONTACT</h1>
+                    <p>
+                        *Please contact us via email with filling out required inquiries.<br>
+                    </p>
+                    <div class="memo">
+                        <p>*For those interested in our products</p>
+                        <p>When making an inquiry, please also provide the following information.</p>
+                        <ul class="required-information">
+                            <li>- Telephone Number</li>
+                            <li>- Destination (Country)</li>
+                            <li>- Desired RAMN Base Purchase Quantity</li>
+                            <li>- Desired ECU Extension Pack Purchase Quantity</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="contact-text">
+                    <form action="mailto:contact@mokocon.com" method="post" enctype="multipart/form-data">
+                        <dl class="form-area">
+                            <dt>
+                                <label for="name">Your Name</label><span>*</span>
+                            </dt>
+                            <dd>
+                                <input type="text" name="first-name" required placeholder="First Name">
+                                <input type="text" name="last-name" required placeholder="Last Name">
+                            </dd>
+                            
+                            <dt>
+                                <label for="company-name">Institution / Company Name</label>
+                            </dt>
+                            <dd>
+                                <input type="text" name="company">
+                            </dd>
+                            <dt>
+                                <label for="email-address">Email address for replies</label><span>*</span>
+                            </dt>
+                            <dd>
+                                <input type="email" required placeholder="sample@test.com">
+                            </dd>
+                            <dt>
+                                <label for="phone-number">Telephone Number</label>
+                            </dt>
+                            <dd>
+                                <input type="tel" placeholder="000-0000">
+                            </dd>
+                            <dt>
+                                <label for="desitination">Destination (Country)</label>
+                            </dt>
+                            <dd>
+                                <input type="text" placeholder="Japan">
+                            </dd>
+                            <dt>
+                                <label for="ramn-quantity"></label>Desired RAMN Base Purchase Quantity
+                            </dt>
+                            <dd>
+                                <input type="number" placeholder="1">
+                            </dd>
+                            <dt>
+                                <label for="extension-quantity"></label>
+                            </dt>Desired ECU Extension Pack Purchase Quantity
+                            <dd>
+                                <input type="number" placeholder="1">
+                            </dd>
+                            <dt>
+                                <label for="detail">Inquiry Details</label><span>※</span>
+                            </dt>
+                            <dd>
+                                <textarea name="inquiry" cols="70" rows="20"></textarea>
+                            </dd>
+
+                            <dt></dt>
+                            <dd>
+                                <p class="privacy-policy">
+                                    <a href="MOKOCon Privacy Policy.pdf" target="_blank">Privacy Policy</a>
+                                </p>
+                            </dd>
+                        </dl>
+
+                        <div class="submit-btn">
+                            <input type="submit" name="submit" value="Agree and Submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
